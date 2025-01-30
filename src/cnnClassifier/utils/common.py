@@ -31,13 +31,13 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
             content = yaml.safe_load(yaml_file)
             
         if content is None:
-            raise ValueError(f"YAML file is empty: {path_to_yaml}")  # More informative error
+            raise ValueError(f"YAML file is empty: {path_to_yaml}") 
 
         logger.info(f"YAML file: {path_to_yaml} loaded successfully")
         return ConfigBox(content)
 
     except BoxValueError:
-        raise ValueError(f"YAML file is empty: {path_to_yaml}")  # Add filename in the error
+        raise ValueError(f"YAML file is empty: {path_to_yaml}") 
     except Exception as e:
         raise Exception(f"Error reading YAML file {path_to_yaml}: {e}") from e
 
