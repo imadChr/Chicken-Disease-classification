@@ -1,8 +1,12 @@
-tensorflow
+tensorflow¸
+python-box
 pandas 
 dvc
+pyyaml
+ensure
 notebook
 numpy
+joblib
 matplotlib
 seaborn
 python-box==6.0.2
