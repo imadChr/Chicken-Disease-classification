@@ -5,7 +5,7 @@ dvc
 pyyaml
 pillow 
 ensure
-
+notebook
 numpy
 joblib
 matplotlib
