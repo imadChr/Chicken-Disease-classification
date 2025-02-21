@@ -80,7 +80,7 @@ jobs:
 
       - name: Login to Amazon ECR
         run: |
-          echo "${{ env.LOGIN_PASSWORD }}" | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+          echo "${{ env.LOGIN_PASSWORD }}" | docker login --username AWS --password-stdin 156041425916.dkr.ecr.us-east-2.amazonaws.com
           
       - name: Pull latest images
         run: |
