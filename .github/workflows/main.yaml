@@ -72,6 +72,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::156041425916:role/read-only 
           role-session-name: GitHubActionsSession
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Pull latest images
         run: |
